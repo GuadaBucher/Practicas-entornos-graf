@@ -1,0 +1,90 @@
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            border: 2px black;
+        }
+
+        .arriba {
+            display: flex;
+            height: 15vh;
+            border-bottom: 2px solid black;
+        }
+        .encabezado {
+            flex: 7;
+            display: flex;
+            padding-left: 20px;
+            align-items: center;
+        }
+        .logo {
+            flex: 3;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: 60px;
+            border-left: 2px solid black;
+        }
+        .logo img {
+            height: 60px;
+        }
+
+        .medio {
+            display: flex;
+            flex: 1;
+            border-bottom: 2px solid black;
+        }
+        .menu {
+            flex: 1.5;
+            padding: 20px;
+            border-right: 2px solid black;
+        }
+        .menu h3 {
+            margin-bottom: 15px;
+        }
+        .menu ul {
+            padding-left: 20px;
+        }
+        .menu li {
+            margin-bottom: 10px;
+        }
+
+        .principal {
+            flex: 7.5;
+            padding: 25px;
+        }
+
+        .pie {
+            height: 10vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .pie ul {
+            list-style-type: none;
+            display: flex;
+            gap: 50px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        .principal > div {
+            display: none;
+        }
+
+        .principal:not(:has(:target)) #inicio {
+            display: block;
+        }
+        #inicio:target,
+        #articulos:target,
+        #masInfo:target {
+            display: block;
+        }
+        
