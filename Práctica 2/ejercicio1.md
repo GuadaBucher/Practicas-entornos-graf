@@ -25,36 +25,44 @@ Las tres formas de dar estilo a un documento son:
 
 - **En un archivo externo:** Se define en un archivo separado que deberá tener la hoja de extensión css. Este archivo contendrá las reglas de estilo pero estarán separadas del archivo HTML.
 El funcionamiento es el siguiente:
-✓ En la página web (archivo .html) se escriben las etiquetas que definen categorías o elementos.
-✓ En la hoja de estilo (archivo .css) se escribe cómo queremos que sea el estilo de presentación de las etiquetas (color, tamaño, fuente, bordes, márgenes, posición, etc).
-✓ En la página web se escribe qué hoja de estilo queremos utilizar.
+- En la página web (archivo .html) se escriben las etiquetas que definen categorías o elementos.
+- En la hoja de estilo (archivo .css) se escribe cómo queremos que sea el estilo de presentación de las etiquetas (color, tamaño, fuente, bordes, márgenes, posición, etc).
+- En la página web se escribe qué hoja de estilo queremos utilizar.
 
 ### 4. ¿ Cuáles son los distintos tipos de selectores más utilizados? Ejemplifique cada uno. 
 Los selectores identifican a un elemento dentro de la página Web para luego poder definir sus propiedades.
 - **Selectores de tipos:** Son los que identifican a un tipo de elemento dentro de los que conforman el código HTML. Es decir, usan la misma palabra que la etiqueta (tag) sin los signos < y >. Ejemplo:
 h1 {text-align: center}
+
 Resultado: identifica a los elementos <h1> de la página y los alínea centralmente.
+
 - **Selectores de clase:** El selector de clases consta de un punto (.) seguido por el nombre de la clase que hayamos creado. Ejemplo: .resaltado {background-color: yellow}
+
 Resultado: Cualquier elemento HTML que tenga class="resaltado" tendrá el fondo amarillo.
+
 - **Selectores de ID:** Los selectores de ID funcionan de manera muy similar a los selectores de clases, salvo que, a diferencia de estos últimos, sólo pueden aplicarse a un elemento de la página. Quiere decir que si hay un elemento que tiene asignado el atributo id ="principal" no podrá haber otro id con igual valor. En vez de usar un punto se utiliza el carácter de numeral (#). Ejemplo: #cabecera-principal {
   font-size: 24px;
   font-weight: bold;
 }
+
 Resultado: Aplica los estilos exclusivamente al elemento que tenga id="cabecera-principal".
 - **Selectores de atributos:** Los selectores de atributos permiten seleccionar elementos de la página según sus propiedades o el valor asignado a estas propiedades. Ejemplo: input[type="text"] {
+
   border: 1px solid gray;
 }
 Resultado: Selecciona únicamente los elementos <input> cuyo atributo type sea exactamente "text".
+
 - **Selector universal:** El selector universal se escribe con un asterisco (*) y representa a cualquier elemento de la página. Ejemplo: * {color: red}
+
 Resultado: Todos los elementos de la página tendrán como color de primer plano el rojo.
 
 ### 5. ¿ Qué es una pseudo-clase? Cuáles son las más utilizadas aplicadas a vínculos? 
 Las pseudo-clases (y los pseudo-elementos) no pueden deducirse simplemente observando la estructura del documento. Puede decirse que son abstracciones que permiten referirse a elementos que de otro modo resultarían inaccesibles.
 Las pseudo-clases son:
-:first-child
-:link y :visited 
-:hover, :active y :focus 
-:lang
+- :first-child
+- :link y :visited 
+- :hover, :active y :focus 
+- :lang
 Las pseudo-clases más utilizadas aplicadas a vínculos, para darle interactividad a los enlaces permitiendo que cambien de apariencia según la acción del usuario son:
 1. :link
 Selecciona los enlaces que aún no han sido visitados por el usuario.
