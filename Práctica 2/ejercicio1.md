@@ -34,7 +34,7 @@ Los selectores identifican a un elemento dentro de la página Web para luego pod
 - **Selectores de tipos:** Son los que identifican a un tipo de elemento dentro de los que conforman el código HTML. Es decir, usan la misma palabra que la etiqueta (tag) sin los signos < y >. Ejemplo:
 h1 {text-align: center}
 
-Resultado: identifica a los elementos <h1> de la página y los alínea centralmente.
+Resultado: identifica a los elementos h1 de la página y los alínea centralmente.
 
 - **Selectores de clase:** El selector de clases consta de un punto (.) seguido por el nombre de la clase que hayamos creado. Ejemplo: .resaltado {background-color: yellow}
 
