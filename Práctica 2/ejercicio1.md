@@ -44,10 +44,9 @@ Resultado: Cualquier elemento HTML que tenga class="resaltado" tendrá el fondo 
 }
 
 Resultado: Aplica los estilos exclusivamente al elemento que tenga id="cabecera-principal".
-- **Selectores de atributos:** Los selectores de atributos permiten seleccionar elementos de la página según sus propiedades o el valor asignado a estas propiedades. Ejemplo: input[type="text"] {
-
-  border: 1px solid gray;
+- **Selectores de atributos:** Los selectores de atributos permiten seleccionar elementos de la página según sus propiedades o el valor asignado a estas propiedades. Ejemplo: input[type="text"] {border: 1px solid gray;
 }
+
 Resultado: Selecciona únicamente los elementos <input> cuyo atributo type sea exactamente "text".
 
 - **Selector universal:** El selector universal se escribe con un asterisco (*) y representa a cualquier elemento de la página. Ejemplo: * {color: red}
