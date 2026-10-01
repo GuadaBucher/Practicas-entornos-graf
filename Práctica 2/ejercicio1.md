@@ -18,11 +18,9 @@ Las declaraciones, a su vez, tienen dos partes: una propiedad (background-color,
 ### 3. ¿ Cuáles son las tres formas de dar estilo a un documento? 
 Las tres formas de dar estilo a un documento son:
 - **Nivel de elemento HTML:** Se define en la propiedad style los estilos a definir para dicho elemento.
-
 - **Nivel de página:** Se define para los distintos elementos HTML de la página en una sección especial de la cabecera que se encierra entre las marcas HTML (en el interior se definen los estilos para los elementos HTML que se necesitan).
 <style>
 </style>
-
 - **En un archivo externo:** Se define en un archivo separado que deberá tener la hoja de extensión css. Este archivo contendrá las reglas de estilo pero estarán separadas del archivo HTML.
 El funcionamiento es el siguiente:
 - En la página web (archivo .html) se escriben las etiquetas que definen categorías o elementos.
