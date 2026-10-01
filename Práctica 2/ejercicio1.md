@@ -23,9 +23,9 @@ Las tres formas de dar estilo a un documento son:
 </style>
 - **En un archivo externo:** Se define en un archivo separado que deberá tener la hoja de extensión css. Este archivo contendrá las reglas de estilo pero estarán separadas del archivo HTML.
 El funcionamiento es el siguiente:
-- En la página web (archivo .html) se escriben las etiquetas que definen categorías o elementos.
-- En la hoja de estilo (archivo .css) se escribe cómo queremos que sea el estilo de presentación de las etiquetas (color, tamaño, fuente, bordes, márgenes, posición, etc).
-- En la página web se escribe qué hoja de estilo queremos utilizar.
+1. En la página web (archivo .html) se escriben las etiquetas que definen categorías o elementos.
+2. En la hoja de estilo (archivo .css) se escribe cómo queremos que sea el estilo de presentación de las etiquetas (color, tamaño, fuente, bordes, márgenes, posición, etc).
+3. En la página web se escribe qué hoja de estilo queremos utilizar.
 
 ### 4. ¿ Cuáles son los distintos tipos de selectores más utilizados? Ejemplifique cada uno. 
 Los selectores identifican a un elemento dentro de la página Web para luego poder definir sus propiedades.
