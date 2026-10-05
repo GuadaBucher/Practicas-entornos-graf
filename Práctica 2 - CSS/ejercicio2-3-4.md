@@ -6,7 +6,7 @@
     - font-family: arial, helvetica; define la tipografía (Arial, o Helvetica si no está disponible).
     - font-size: 11px; define el tamaño de la fuente en 11 píxeles.
     - font-weight: bold; pone el texto en negrita.
-- Se aplica a: <p id="normal">Este es un párrafo</p>
+- Se aplica a: p id="normal"Este es un párrafo.
 - Efecto: el primer párrafo se ve en Arial/Helvetica, 11px y negrita.
 
 ### **Regla 2: *#destacado**
@@ -15,15 +15,15 @@
     - border-style: solid; pone un borde de línea.
     - border-color: blue; lo pone de color azul.
     - border-width: 2px; le da un grosor de 2 píxeles.
-- Se aplica a: <p id="destacado"> y <table id="destacado">, porque el * admite cualquier elemento con ese id.
-- Efecto: el segundo párrafo y la tabla quedan rodeados por un borde azul sólido de 2px. En la tabla el borde afecta solo al contorno de la <table>.
+- Se aplica a: p id="destacado" y table id="destacado", porque el * admite cualquier elemento con ese id.
+- Efecto: el segundo párrafo y la tabla quedan rodeados por un borde azul sólido de 2px. En la tabla el borde afecta solo al contorno de la tabla.
 
 ### **Regla 3: #distinto**
 - Selector: solo el id distinto, sin importar el tipo de elemento.
 - Declaraciones:
     - background-color: #9EC7EB; aplica un fondo celeste.
     - color: red; pone el texto en rojo.
-- Se aplica a: <p id="distinto">Este es el último párrafo</p>
+- Se aplica a: p id="distinto"Este es el último párrafo
 - Efecto: el último párrafo se ve con texto rojo sobre fondo celeste, que ocupa todo el ancho del bloque.
 
 
@@ -32,7 +32,7 @@
 ### **Regla 1: p.quitar { color: red; }**
 - Selector: elemento p con la clase quitar
 - Declaración: color: red; (propiedad color, valor red).
-- Se aplica a: solo a los <p> que tengan la clase quitar.
+- Se aplica a: solo a los p que tengan la clase quitar.
 - Efecto: el texto de esos párrafos se ve en rojo.
 
 
@@ -49,7 +49,7 @@
 - Se aplica a: cualquier elemento con la clase importante.
 - Efecto: el texto se muestra en 20 píxeles (grande).
 
-1. El <h1 class="quitar"> no se pone rojo. Tiene la clase quitar, pero la regla es p.quitar y exige que el elemento sea un <p>. Para que también afectara al encabezado, el selector tendría que ser .quitar.
+1. El h1 class="quitar" no se pone rojo. Tiene la clase quitar, pero la regla es p.quitar y exige que el elemento sea un p. Para que también afectara al encabezado, el selector tendría que ser .quitar.
 2. El tercer párrafo no recibe ningún estilo. Al no tener atributo class, ningún selector coincide. Se ve con el tamaño y color por defecto.
 3. El último párrafo combina dos clases. Con class="quitar importante" coinciden dos reglas:
 p.quitar aporta color: red.

@@ -14,6 +14,15 @@ Cada regla consta de: un selector (p) que identifica un elemento de la página W
 Al selector le sigue un bloque de declaraciones que comienza con una llave de apertura ({) y termina con otra llave de cierre (}). Entre las llaves van las declaraciones (background-color: red; color: #FFFFFF), que son las que le indican al browser el estilo para el elemento seleccionado.
 Las declaraciones, a su vez, tienen dos partes: una propiedad (background-color, color) que consiste en alguna de las palabras claves definidas por el lenguaje, seguida de dos puntos (:) y un valor (red, #FFFFFF) para esa propiedad. Existen distintos valores y cada propiedad puede aceptar algunos de esos valores.
 
+El otro tipo de estamento se llama regla arroba porque comienza con el carácter arroba (@) seguido por un identificador. Según de qué regla arroba se trate finalizará con un punto y coma (;) o podrá tener un bloque de declaraciones posterior. Estos son dos ejemplos de este tipo de regla:
+@import "impres.css";
+
+@media print {
+  BODY { font-size: 10pt }
+}
+
+La primera sirve para importar otra Hoja de Estilo para ser usada conjuntamente con la actual, la segunda indica que la declaración BODY {font-size: 10pt} se usará solamente cuando la página sea impresa.
+
 
 ### 3. ¿ Cuáles son las tres formas de dar estilo a un documento? 
 Las tres formas de dar estilo a un documento son:
