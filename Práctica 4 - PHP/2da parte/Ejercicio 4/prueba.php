@@ -28,7 +28,7 @@ $prueba = array(
     "abc",                              // válido (largo mínimo: 3)
     "abcdefghijklmnopqrst",             // válido (largo máximo: 20)
     "ab",                               // inválido: muy corto
-    "este_nombre_es_demasiado_largo",   // inválido: más de 20
+    "pablito_perez_0298364822234",      // inválido: más de 20
     "Pablo Perez",                      // inválido: tiene espacio
     "Pablo!",                           // inválido: tiene "!"
     "ñoqui",                            // inválido: tiene "ñ"
