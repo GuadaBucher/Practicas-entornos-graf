@@ -1,0 +1,15 @@
+/* Práctica 1 */
+.contenedor {
+  background-color: #d6e4f0;
+}
+
+/* Práctica 2 y 3 */
+.caja { min-height: 60px; }
+.c-header   { background-color: #a67ea8; min-height: 110px; }
+.c-crema    { background-color: #f9e6d9; }
+.c-rosa     { background-color: #e0b0ae; }
+.c-sidebar  { background-color: #f4d9d0; }
+.c-verde    { background-color: #6acb83; }
+.c-violeta  { background-color: #9d8c96; }
+.c-celeste  { background-color: #7b9ccb; }
+
