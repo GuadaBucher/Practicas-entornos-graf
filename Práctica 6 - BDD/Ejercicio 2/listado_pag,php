@@ -1,0 +1,31 @@
+<?php
+include("conexion.inc");
+
+$por_pagina = 3;
+
+$pagina = 1;
+if (isset($_GET['pagina'])) {
+    $pagina = $_GET['pagina'];
+}
+$inicio = ($pagina - 1) * $por_pagina;
+
+$resultado = mysqli_query($link, "SELECT * FROM ciudades");
+$total_paginas = ceil(mysqli_num_rows($resultado) / $por_pagina);
+
+$resultado = mysqli_query($link, "SELECT * FROM ciudades LIMIT $inicio, $por_pagina");
+
+echo "<table border='1'>";
+echo "<tr><td>id</td><td>ciudad</td><td>país</td><td>habitantes</td><td>superficie</td><td>tieneMetro</td></tr>";
+while ($fila = mysqli_fetch_array($resultado)) {
+    echo "<tr><td>" . $fila['id'] . "</td><td>" . $fila['ciudad'] . "</td><td>" . $fila['pais'] .
+         "</td><td>" . $fila['habitantes'] . "</td><td>" . $fila['superficie'] .
+         "</td><td>" . $fila['tieneMetro'] . "</td></tr>";
+}
+echo "</table>";
+
+for ($i = 1; $i <= $total_paginas; $i++) {
+    echo "<a href='listado_pag.php?pagina=$i'>$i</a> ";
+}
+mysqli_close($link);
+?>
+<br><a href="menu.html">Volver al menú</a>

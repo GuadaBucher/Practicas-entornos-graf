@@ -1,0 +1,17 @@
+<?php
+include("conexion.inc");
+
+$id         = $_POST['id'];
+$ciudad     = $_POST['ciudad'];
+$pais       = $_POST['pais'];
+$habitantes = $_POST['habitantes'];
+$superficie = $_POST['superficie'];
+$tieneMetro = $_POST['tieneMetro'];
+
+mysqli_query($link, "UPDATE ciudades SET ciudad='$ciudad', pais='$pais', habitantes=$habitantes,
+                     superficie=$superficie, tieneMetro=$tieneMetro WHERE id=$id");
+
+echo "Ciudad modificada";
+mysqli_close($link);
+?>
+<br><a href="Menu.html">Volver al menú</a>
