@@ -27,7 +27,7 @@ Ejemplo de uso de cookies en PHP para almacenar la hoja de estilos css que quere
 Seleccionar el estilo que prefiera en la página:
 <br>
 <select name="estilo">
-<option value="blue">Azul
+<option value="azul">Azul
 <option value="rosa">Rosa
 <option value="negro">Negro
 </select>
