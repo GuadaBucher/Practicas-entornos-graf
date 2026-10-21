@@ -7,7 +7,7 @@
 </head>
 <body>
 <?php
-include("Conexion.inc");
+include("Conexion.php");
 $pal=$_POST['Palabra'];
 if($pal){
     $resp = mysqli_query($link, "select * from buscador where canciones LIKE '%".$pal."%'") or die (mysqli_error($link));

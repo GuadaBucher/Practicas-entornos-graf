@@ -7,7 +7,7 @@ session_start();
 </head>
 <body>
 <?php
-include ("conexion.inc");
+include ("conexion.php");
 $mail = $_POST['mail'];
 $vSql = "select * FROM alumnos WHERE mail ='$mail' ";
 $vResultado = mysqli_query($link, $vSql) or die (mysqli_error($link));
