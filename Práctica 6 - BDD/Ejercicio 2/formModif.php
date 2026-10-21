@@ -1,5 +1,5 @@
 <?php
-include("conexion.inc");
+include("conexion.php");
 
 $id = $_POST['id'];
 $resultado = mysqli_query($link, "SELECT * FROM ciudades WHERE id = $id");

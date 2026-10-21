@@ -1,5 +1,5 @@
 <?php
-include("conexion.inc");
+include("conexion.php");
 
 $id = $_POST['id'];
 mysqli_query($link, "DELETE FROM ciudades WHERE id = $id");

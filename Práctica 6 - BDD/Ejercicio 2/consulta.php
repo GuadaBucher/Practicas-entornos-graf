@@ -1,5 +1,5 @@
 <?php
-include("conexion.inc");
+include("conexion.php");
 
 $resultado = mysqli_query($link, "SELECT * FROM ciudades");
 

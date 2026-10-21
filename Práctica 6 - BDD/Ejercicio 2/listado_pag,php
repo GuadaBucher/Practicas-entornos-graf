@@ -1,5 +1,5 @@
 <?php
-include("conexion.inc");
+include("conexion.php");
 
 $por_pagina = 3;
 

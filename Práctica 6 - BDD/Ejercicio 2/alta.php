@@ -1,5 +1,5 @@
 <?php
-include("conexion.inc");
+include("conexion.php");
 
 $ciudad     = $_POST['ciudad'];
 $pais       = $_POST['pais'];
